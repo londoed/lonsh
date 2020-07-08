@@ -228,25 +228,14 @@ void lonsh_loop(void)
     } while (status);
 }
 
-int main(int argc, char **argv[])
-{
-    lonsh_loop();
-    return EXIT_SUCCESS;
-}
-
 /*
  * Main entry point.
  * argc Argument count.
  * argv Argument vector.
  * return status code.
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv[])
 {
-    /* Load config files, if any */
-
-    /* Run loop commang */
-    lsh_loop();
-
-    /* Perform any shutdown/cleanup */
+    lonsh_loop();
     return EXIT_SUCCESS;
 }
