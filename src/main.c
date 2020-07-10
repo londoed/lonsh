@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020, Eric lonshdo <lonshdoed@comcast.net>
+ * Copyright (c) 2020, Eric lonshdo <londoed@comcast.net>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -214,7 +214,7 @@ char **lonsh_split_line(char *line)
 void lonsh_loop(void)
 {
     char *line;
-    char *&args;
+    char **args;
     int status;
 
     do {
